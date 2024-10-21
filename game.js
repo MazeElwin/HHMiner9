@@ -1,12 +1,13 @@
 // game.js
 
-// Setup canvas and context
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
-
-// Set canvas size
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
+// Test to fill canvas with a color
+ctx.fillStyle = '#0000FF';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 // Game variables
 let isRunning = true;
